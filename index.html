@@ -3,36 +3,55 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>LumeLaunch — Landing pronta para vender</title>
-  <meta name="description" content="LumeLaunch: template one-page otimizado para conversão, performance e segurança — entregue pronto para produção."/>
-  <meta name="author" content="LumeLaunch"/>
+  <title>LumeLaunch — Landing moderna e otimizada</title>
+
+  <meta name="description" content="Landing page ultra moderna, com alta conversão, animações premium e performance impecável."/>
   <link rel="stylesheet" href="/assets/styles.css">
 </head>
+
 <body>
   <main class="container">
-    <header class="header">
-      <div class="brand"><span class="logo">LL</span><span class="brand-text">LumeLaunch</span></div>
-      <nav class="nav"><a href="#features">Recursos</a><a href="#precos">Preços</a><a href="#contact">Contato</a></nav>
+
+    <!-- HEADER -->
+    <header class="header fade-in">
+      <div class="brand">
+        <span class="logo">LL</span>
+        <span class="brand-text">LumeLaunch</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#features">Recursos</a>
+        <a href="#precos">Preços</a>
+        <a href="#contact">Contato</a>
+      </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-left">
-        <h1>Venda mais — Landing pronta, rápida e otimizada</h1>
-        <p class="lead">Entregue um site profissional em poucas horas. Design moderno, performance impecável e checkout pronto para testar vendas.</p>
-        <div class="cta">
+    <!-- HERO -->
+    <section class="hero fade-in">
+      <div class="hero-left slide-left">
+        <h1>Venda mais — Landing moderna, rápida e confiável</h1>
+        <p class="lead">
+          Construída com foco total em conversão, velocidade e credibilidade. Entregue um site profissional em minutos.
+        </p>
+
+        <div class="cta fade-in delay-1">
           <button id="buyBtn" class="btn primary">Comprar agora — R$129</button>
           <button id="previewBtn" class="btn outline">Ver demo</button>
         </div>
-        <ul class="hero-features">
-          <li>✅ Carregamento rápido e mobile-first</li>
-          <li>✅ Copy pronta e otimizada para conversão</li>
-          <li>✅ Backend seguro e roteiro de deploy</li>
+
+        <ul class="hero-features fade-in delay-2">
+          <li>✨ Layout moderno e refinado</li>
+          <li>⚡ Carregamento rápido e mobile-first</li>
+          <li>🔒 Proteção essencial contra ataques e má-uso</li>
         </ul>
       </div>
-      <div class="hero-right card">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80" alt="Imagem de destaque" class="hero-img"/>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80" alt="Produto demo"/>
+
+      <div class="hero-right card scale-in delay-2">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80"
+             alt="Imagem principal" class="hero-img"/>
+
+        <div class="product fade-in delay-3">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80" alt="Produto destaque"/>
           <div class="prod-meta">
             <div class="prod-title">Tênis Urban Pro</div>
             <div class="prod-desc">Leve. Confortável. Eco.</div>
@@ -42,39 +61,56 @@
       </div>
     </section>
 
-    <section id="features" class="card">
-      <h2>Por que LumeLaunch funciona</h2>
-      <ul>
-        <li>Design focado em conversão com tipografia forte</li>
-        <li>Proteção básica contra ataques (XSS, rate limit, sanitização)</li>
-        <li>Deploy com Docker + Nginx e instruções de HTTPS via Let's Encrypt</li>
+
+    <!-- FEATURES -->
+    <section id="features" class="card fade-in">
+      <h2 class="slide-left">Por que LumeLaunch funciona</h2>
+      <ul class="fade-in delay-1">
+        <li>Design focado em conversão com hierarquia visual forte</li>
+        <li>Arquitetura segura com proteções essenciais</li>
+        <li>Deploy profissional com Docker + Nginx + HTTPS</li>
       </ul>
     </section>
 
-    <section id="precos" class="card">
-      <h2>Planos prontos</h2>
-      <div class="plans">
-        <div class="plan"><strong>Solo</strong><span>R$129</span><p>Template + docs</p></div>
-        <div class="plan"><strong>Pro</strong><span>R$349</span><p>Instalação + 30 dias suporte</p></div>
-        <div class="plan"><strong>Agência</strong><span>R$899</span><p>White-label + 3 demos</p></div>
+
+    <!-- PREÇOS -->
+    <section id="precos" class="card fade-in">
+      <h2 class="slide-left">Planos prontos</h2>
+
+      <div class="plans fade-in delay-1">
+        <div class="plan scale-in"><strong>Solo</strong><span>R$129</span><p>Template + documentação</p></div>
+        <div class="plan scale-in delay-1"><strong>Pro</strong><span>R$349</span><p>Instalação + suporte</p></div>
+        <div class="plan scale-in delay-2"><strong>Agência</strong><span>R$899</span><p>White-label + 3 demos</p></div>
       </div>
     </section>
 
-    <section id="contact" class="card">
-      <h2>Peça já a sua versão personalizada</h2>
-      <form id="contactForm" method="POST" action="/api/contact" novalidate>
+
+    <!-- CONTATO -->
+    <section id="contact" class="card fade-in">
+      <h2 class="slide-left">Peça sua versão personalizada</h2>
+
+      <form id="contactForm" method="POST" action="/api/contact" novalidate class="fade-in delay-1">
         <label>Nome<input name="name" type="text" required maxlength="100"/></label>
         <label>Email<input name="email" type="email" required maxlength="120"/></label>
         <label>Mensagem<textarea name="message" rows="4" maxlength="1000">Quero a versão pronta para meu negócio</textarea></label>
+
         <input type="hidden" name="source" value="lumelaunch-pro" />
-        <!-- Integração com reCAPTCHA/hcaptcha recomendada: adicione token aqui -->
+
         <button type="submit" class="btn primary">Enviar pedido</button>
       </form>
+
       <div id="formMsg" aria-live="polite"></div>
     </section>
 
-    <footer class="footer">© LumeLaunch • Landing pronta para vender • <a href="https://lumelaunch.com" target="_blank" rel="noopener noreferrer">https://lumelaunch.com</a></footer>
+
+    <!-- FOOTER -->
+    <footer class="footer fade-in delay-2">
+      © 2025 LumeLaunch • Landing moderna • 
+      <a href="https://lumelaunch.com" target="_blank" rel="noopener noreferrer">lumelaunch.com</a>
+    </footer>
+
   </main>
+
   <script src="/assets/app.js" defer></script>
 </body>
 </html>
