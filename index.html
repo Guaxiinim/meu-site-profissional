@@ -3,114 +3,120 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>LumeLaunch — Landing moderna e otimizada</title>
+  <title>LumeLaunch — Landing Page Moderna</title>
+  <meta name="description" content="Template premium otimizado para alta conversão, carregamento rápido, visual profissional e segurança.">
+  <link rel="stylesheet" href="/styles.css">
 
-  <meta name="description" content="Landing page ultra moderna, com alta conversão, animações premium e performance impecável."/>
-  <link rel="stylesheet" href="/assets/styles.css">
+  <!-- Fonte moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <main class="container">
 
-    <!-- HEADER -->
-    <header class="header fade-in">
-      <div class="brand">
-        <span class="logo">LL</span>
-        <span class="brand-text">LumeLaunch</span>
+  <header class="header container">
+    <div class="logo">LumeLaunch</div>
+
+    <nav class="nav">
+      <a href="#features">Recursos</a>
+      <a href="#plans">Planos</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-left">
+      <h1>Transforme seu negócio com uma landing page moderna e profissional</h1>
+      <p class="lead">
+        Design premium, carregamento rápido, otimização para conversão e estrutura pronta para vender.
+      </p>
+
+      <div class="cta">
+        <button class="btn primary">Começar agora</button>
+        <button class="btn outline">Ver demonstração</button>
       </div>
 
-      <nav class="nav">
-        <a href="#features">Recursos</a>
-        <a href="#precos">Preços</a>
-        <a href="#contact">Contato</a>
-      </nav>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero fade-in">
-      <div class="hero-left slide-left">
-        <h1>Venda mais — Landing moderna, rápida e confiável</h1>
-        <p class="lead">
-          Construída com foco total em conversão, velocidade e credibilidade. Entregue um site profissional em minutos.
-        </p>
-
-        <div class="cta fade-in delay-1">
-          <button id="buyBtn" class="btn primary">Comprar agora — R$129</button>
-          <button id="previewBtn" class="btn outline">Ver demo</button>
-        </div>
-
-        <ul class="hero-features fade-in delay-2">
-          <li>✨ Layout moderno e refinado</li>
-          <li>⚡ Carregamento rápido e mobile-first</li>
-          <li>🔒 Proteção essencial contra ataques e má-uso</li>
-        </ul>
-      </div>
-
-      <div class="hero-right card scale-in delay-2">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80"
-             alt="Imagem principal" class="hero-img"/>
-
-        <div class="product fade-in delay-3">
-          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80" alt="Produto destaque"/>
-          <div class="prod-meta">
-            <div class="prod-title">Tênis Urban Pro</div>
-            <div class="prod-desc">Leve. Confortável. Eco.</div>
-            <div class="price">R$249</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- FEATURES -->
-    <section id="features" class="card fade-in">
-      <h2 class="slide-left">Por que LumeLaunch funciona</h2>
-      <ul class="fade-in delay-1">
-        <li>Design focado em conversão com hierarquia visual forte</li>
-        <li>Arquitetura segura com proteções essenciais</li>
-        <li>Deploy profissional com Docker + Nginx + HTTPS</li>
+      <ul class="hero-features">
+        <li>⚡ Velocidade otimizada</li>
+        <li>🔒 Configuração com segurança reforçada</li>
+        <li>📱 100% responsivo para mobile</li>
       </ul>
-    </section>
+    </div>
 
-
-    <!-- PREÇOS -->
-    <section id="precos" class="card fade-in">
-      <h2 class="slide-left">Planos prontos</h2>
-
-      <div class="plans fade-in delay-1">
-        <div class="plan scale-in"><strong>Solo</strong><span>R$129</span><p>Template + documentação</p></div>
-        <div class="plan scale-in delay-1"><strong>Pro</strong><span>R$349</span><p>Instalação + suporte</p></div>
-        <div class="plan scale-in delay-2"><strong>Agência</strong><span>R$899</span><p>White-label + 3 demos</p></div>
+    <div class="hero-right">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80"
+             alt="Imagem ilustrativa moderna">
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- FEATURES -->
+  <section id="features" class="container card">
+    <h2>Recursos que fazem você vender mais</h2>
+    <ul>
+      <li>Design profissional com foco em conversão</li>
+      <li>Estrutura leve e rápida — SEO otimizado</li>
+      <li>Proteção básica contra ataques e vulnerabilidades comuns</li>
+      <li>Funciona em qualquer dispositivo</li>
+    </ul>
+  </section>
 
-    <!-- CONTATO -->
-    <section id="contact" class="card fade-in">
-      <h2 class="slide-left">Peça sua versão personalizada</h2>
+  <!-- PLANS -->
+  <section id="plans" class="container card">
+    <h2>Escolha seu plano</h2>
 
-      <form id="contactForm" method="POST" action="/api/contact" novalidate class="fade-in delay-1">
-        <label>Nome<input name="name" type="text" required maxlength="100"/></label>
-        <label>Email<input name="email" type="email" required maxlength="120"/></label>
-        <label>Mensagem<textarea name="message" rows="4" maxlength="1000">Quero a versão pronta para meu negócio</textarea></label>
+    <div class="plans">
+      <div class="plan">
+        <strong>Básico</strong>
+        <span>R$129</span>
+        <p>Landing page completa e pronta para uso.</p>
+      </div>
 
-        <input type="hidden" name="source" value="lumelaunch-pro" />
+      <div class="plan">
+        <strong>Profissional</strong>
+        <span>R$349</span>
+        <p>Instalação + personalização visual.</p>
+      </div>
 
-        <button type="submit" class="btn primary">Enviar pedido</button>
-      </form>
+      <div class="plan">
+        <strong>Agência</strong>
+        <span>R$899</span>
+        <p>White-label + até 3 variações exclusivas.</p>
+      </div>
+    </div>
+  </section>
 
-      <div id="formMsg" aria-live="polite"></div>
-    </section>
+  <!-- CONTACT -->
+  <section id="contact" class="container card">
+    <h2>Fale com a gente</h2>
 
+    <form id="contactForm" method="POST" action="/api/contact">
+      <label>
+        Nome
+        <input type="text" name="name" required />
+      </label>
 
-    <!-- FOOTER -->
-    <footer class="footer fade-in delay-2">
-      © 2025 LumeLaunch • Landing moderna • 
-      <a href="https://lumelaunch.com" target="_blank" rel="noopener noreferrer">lumelaunch.com</a>
-    </footer>
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
 
-  </main>
+      <label>
+        Mensagem
+        <textarea name="message" rows="4" required></textarea>
+      </label>
 
-  <script src="/assets/app.js" defer></script>
+      <button type="submit" class="btn primary">Enviar mensagem</button>
+    </form>
+
+    <div id="formMsg"></div>
+  </section>
+
+  <footer class="footer">
+    © 2025 • LumeLaunch — Todos os direitos reservados
+  </footer>
+
+  <script src="/app.js" defer></script>
 </body>
 </html>
